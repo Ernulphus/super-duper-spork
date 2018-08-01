@@ -1,0 +1,18 @@
+// Boaz Kaufman
+// 7.31.18
+// Simple Fibonacci Calculator or something?
+
+
+int main()
+{
+int[] fibs = new int[20];
+std::cout << "A bit of the Fibonacci sequence!";
+
+fibs[0] = 1;
+fibs[1] = 1;
+for (int n=2; n<20; n++)
+{
+  fibs[n] = fibs[n-2]+fibs[n-1];
+  std::cout<< fibs[n] <<"   ";
+}
+}
